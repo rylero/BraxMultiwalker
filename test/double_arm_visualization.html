@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Double Arm Touch Visualization</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Double Arm Touch Simulation (2D)</h1>
+        <div class="info">
+            <p><strong>Simulation completed with 301 timesteps</strong></p>
+            <p>Note: Interactive 3D visualization for MJX backend requires additional setup.</p>
+            <p>Check the generated PNG plots for metrics visualization!</p>
+        </div>
+        <h2>Simulation Stats:</h2>
+        <ul>
+            <li>Total frames: 301</li>
+            <li>Physics backend: MJX (MuJoCo XLA)</li>
+            <li>Model bodies: 9</li>
+            <li>Model joints: 4</li>
+            <li>Dimension: 2D (constrained to XZ plane)</li>
+            <li>Geometry: Capsules and spheres (MJX compatible)</li>
+        </ul>
+    </div>
+</body>
+</html>

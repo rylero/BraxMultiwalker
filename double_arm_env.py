@@ -314,7 +314,7 @@ class DoubleArmTouch2D(PipelineEnv):
         return rewards, metrics
 
 
-def create_mujoco_visualization(mj_model, states, save_path="double_arm_visualization.html"):
+def create_mujoco_visualization(mj_model, states, save_path="test/double_arm_visualization.html"):
     """
     Create visualization using MuJoCo's native rendering (fixed encoding).
     """
@@ -375,7 +375,7 @@ def create_mujoco_visualization(mj_model, states, save_path="double_arm_visualiz
         f.write(html_content)
 
 
-def visualize_rollout(env, states, save_path="double_arm_visualization.html"):
+def visualize_rollout(env, states, save_path="test/double_arm_visualization.html"):
     """
     Create an interactive HTML visualization of the rollout.
     """
@@ -404,7 +404,7 @@ def visualize_rollout(env, states, save_path="double_arm_visualization.html"):
         print(f"Warning: Could not generate HTML visualization: {e}")
 
 
-def plot_metrics(states, save_path="metrics_plot.png"):
+def plot_metrics(states, save_path="test/metrics_plot.png"):
     """
     Plot distance, rewards, and success over time.
     """
@@ -452,7 +452,7 @@ def plot_metrics(states, save_path="metrics_plot.png"):
     plt.close()
 
 
-def plot_2d_trajectory(states, save_path="trajectory_2d.png"):
+def plot_2d_trajectory(states, save_path="test/trajectory_2d.png"):
     """
     Plot the 2D trajectory of both end-effectors.
     """
